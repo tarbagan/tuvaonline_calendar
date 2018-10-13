@@ -30,7 +30,6 @@ def tuvaonline():
                         time = (now.strftime("%s:00" % h[0])) 
                     else:
                         time = "время не определено"
-
                     if place:
                         mesto = (place[0])
                     else:
@@ -63,7 +62,6 @@ def tuvaonline():
                     cal ={"date":date,"tit":tit,"time":time,"mesto":mesto,"region":"Туваонлайн"}
                     calendar.append(cal)
     return calendar
- 
 def message():
     now = datetime.datetime.now()
     for text in tuvaonline():
